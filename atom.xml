@@ -4,13 +4,50 @@
    <subtitle>Lotus framework blog</subtitle>
    <link href="http://lotusrb.org/atom.xml" rel="self"/>
    <link href="http://lotusrb.org/blog"/>
-   <updated>2015-06-29T05:51:00+10:00</updated>
+   <updated>2015-06-30T18:23:00+10:00</updated>
    <id>http://lotusrb.org/blog</id>
    <author>
      <name>Lotus</name>
      <email>admin@lotusrb.org</email>
    </author>
 
+     <entry>
+       <title>Announcing Rails Girls Summer of Code x Lotus</title>
+       <id>http://lotusrb.org/blog/2015/06/30/announcing-lotus-rgsoc.html</id>
+       <link rel="alternate" href="http://lotusrb.org/blog/2015/06/30/announcing-lotus-rgsoc.html"/>
+       <updated>2015-06-30T18:23:00+10:00</updated>
+       <author>
+         <name>Trung Lê</name>
+       </author>
+       <summary>
+         This year marks the first participitation of Lotus project with Rails Girls Summer of Code program to deliver the long awaited mailer feature that has been set to be released along the roadmap for version 0.5.0.
+
+       </summary>
+       <content type="html"><![CDATA[<p>Hello our beloved Community.</p>
+
+<p>We are thrilled to announce Lotus&rsquo;s very first participation
+with <a href="http://railsgirlssummerofcode.org">Rails Girls Summer of Code</a>.</p>
+
+<p>Rails Girls Summer of Code is a 3 months program scholarship for
+female students to take part in OSS projects and this year marks
+the 3rd year of the program.</p>
+
+<p>As the projector mentor this year, I would like to extend welcome to Inês &amp; Rosa of Team DEIGirls from Coimbra, Portugal. For the next
+3 months, I&rsquo;ll be following our girls&rsquo; every step to bring to our
+Community the long awaited <strong>mailer</strong> feature.</p>
+
+<p>Mailer feature is planned to be released along with our Lotus 0.5.0
+as we&rsquo;ve announced in our <a href="https://discuss.lotusrb.org/t/lotus-v0-5-0-roadmap/95">roadmap post</a> yesterday. Following our philosophy, mailer library will be delivered as <a href="https://github.com/lotus/mailer">lotus-mailer</a> gem that can be utilised with any existing Ruby applications, and at the same time as an integrated component of Lotus applications.</p>
+
+<p>Let&rsquo;s see what <code>lotus-mailer</code> has to offer. The library will use the battle-tested <a href="https://github.com/mikel/mail">mail</a> gem by my fellow Aussie <a href="https://github.com/mikel">Mikel Lindsaar</a>. It will offer ability to customising templates, supporting many delivery methods and attachments. Furthermore, Lotus would leverage <code>lotus-model</code> to deliver mail based on 1:1 association between mailer and the usecase, unlike those of multiple usecases of Rails (a mailer could do multiple messages, eg. welcome users, forgot password, etc).</p>
+
+<p>Again, a big shout out to awesome Rails Girls Summer of Code team and to our coach Christian Weyer.</p>
+
+<p>Please leave your comment of support for our girls this summer :)</p>
+
+<p>Peace out</p>
+]]></content>
+     </entry>
      <entry>
        <title>Weekly Changelog</title>
        <id>http://lotusrb.org/blog/2015/06/28/weekly-changelog.html</id>
@@ -1184,48 +1221,6 @@ We&rsquo;re pushing to ship soon.</p>
 <li>[<a href="https://github.com/sungwoncho">Sung Won Cho</a>] Add Destroy CLI [<a href="https://github.com/lotus/lotus/pull/194">details</a>]</li>
 <li>[<a href="https://github.com/dsnipe">Dmitry Tymchuk</a>] Add repository timestamps [<a href="https://github.com/lotus/model/pull/169">details</a>]</li>
 <li>[<a href="https://github.com/joneslee85">Trung Lê</a>] Database migrations [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
-<li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Form helpers [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
-<li>[<a href="https://github.com/tomkadwill">Tom Kadwill</a>] Number formatting helpers [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
-<li>[<a href="https://github.com/rodzyn">Marcin Olichwirowicz</a>] Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
-</ul>
-
-<h2>Roadmap</h2>
-
-<p><a href="http://bit.ly/lotusrb-roadmap">Trello board</a></p>
-]]></content>
-     </entry>
-     <entry>
-       <title>Weekly Changelog</title>
-       <id>http://lotusrb.org/blog/2015/04/19/weekly-changelog.html</id>
-       <link rel="alternate" href="http://lotusrb.org/blog/2015/04/19/weekly-changelog.html"/>
-       <updated>2015-04-19T15:14:00+10:00</updated>
-       <author>
-         <name>Trung Lê</name>
-       </author>
-       <summary>
-         Changelog from Apr 14th to Apr 19th 2015
-
-       </summary>
-       <content type="html"><![CDATA[<h2>Releases</h2>
-
-<p>-</p>
-
-<h2>Completed</h2>
-
-<ul>
-<li>[<a href="https://github.com/dsnipe">Dmitry Tymchuk</a>] Implementation of dirty check for entity [<a href="https://github.com/lotus/model/pull/172">details</a>]</li>
-<li>[<a href="https://github.com/mvader">Miguel Molina</a>] Add self.body to actions generated with &ndash;skip-view flag [<a href="https://github.com/lotus/lotus/pull/206">details</a>]</li>
-<li>[<a href="https://github.com/AlfonsoUceda">Alfonso Uceda</a>] Fixed lotus entity integration bug [<a href="https://github.com/lotus/validations/pull/55">details</a>]</li>
-</ul>
-
-<h2>Development</h2>
-
-<ul>
-<li>[<a href="https://github.com/AlfonsoUceda">Alfonso Uceda</a>] Added nested routes [<a href="https://github.com/lotus/router/pull/51">details</a>]</li>
-<li>[<a href="https://github.com/sungwoncho">Sung Won Cho</a>] Add Destroy CLI [<a href="https://github.com/lotus/lotus/pull/194">details</a>]</li>
-<li>[<a href="https://github.com/dsnipe">Dmitry Tymchuk</a>] Add repository timestamps [<a href="https://github.com/lotus/model/pull/169">details</a>]</li>
-<li>[<a href="https://github.com/joneslee85">Trung Lê</a>] Database migrations [<a href="https://github.com/lotus/model/pull/144">details</a>]</li>
-<li>[<a href="https://github.com/hieuk09">Hiếu Nguyễn</a>] Application generator [<a href="https://github.com/lotus/lotus/pull/181">details</a>]</li>
 <li>[<a href="https://github.com/jodosha">Luca Guidi</a>] Form helpers [<a href="https://github.com/lotus/helpers/pull/16">details</a>]</li>
 <li>[<a href="https://github.com/tomkadwill">Tom Kadwill</a>] Number formatting helpers [<a href="https://github.com/lotus/helpers/pull/11">details</a>]</li>
 <li>[<a href="https://github.com/rodzyn">Marcin Olichwirowicz</a>] Custom validations [<a href="https://github.com/lotus/validations/pull/49">details</a>]</li>
