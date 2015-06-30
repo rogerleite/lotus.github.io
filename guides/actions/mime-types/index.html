@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lotus - Guides - Action MIME Types</title>
+    <meta name="description" content="Lotus, a complete web framework for Ruby" />
+    <meta name="keywords" content="lotus,web,framework,ruby,open source,oss,os,software,free,free software,architecture,fast,lightweight,testing,tdd,bdd,test driven development,behaviour driven development,full stack,mvc,model view object,pattern,patterns,design patterns,oop,object oriented programming,testability,http,https,routing,router,http router,restful,resource,resources,convention,controller,models,repository,query,sql,interactors,two-step view,view,template,presenters,render,rendering,helpers,erb,haml,tilt,json,xml,yaml,yml,framwork,framewrok,riby,free sowftare"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://feeds.feedburner.com/lotusrb" rel="alternate" title="Lotus" type="application/atom+xml" />
+
+    <link href="/stylesheets/application.css" rel="stylesheet" type="text/css" />
+
+    <script src="//use.typekit.net/xhp5wmc.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body class="subpage docs">
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-fixed-top container-fluid">
+  <div class="wrapper container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/community">Community</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://rubygems.org/gems/lotusrb" id="nav-link-install" target="_blank" class="btn btn-primary version">Install v0.4.0</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+    <section class="docs wrapper animated fadeIn">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 hidden-sm hidden-xs sidebar">
+            <ul class="nav nav-sidebar">
+              <li>
+                <span class="heading">Getting Started</span>
+                <ul class="nav">
+                  <li><a href="/guides/getting-started">Getting Started</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Architectures</span>
+                <ul class="nav">
+                  <li><a href="/guides/architectures/overview">Overview</a></li>
+                  <li><a href="/guides/architectures/container">Container</a></li>
+                  <li><a href="/guides/architectures/application">Application</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Routing</span>
+                <ul class="nav">
+                  <li><a href="/guides/routing/overview">Overview</a></li>
+                  <li><a href="/guides/routing/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/routing/restful-resources">RESTful Resource(s)</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Actions</span>
+                <ul class="nav">
+                  <li><a href="/guides/actions/overview">Overview</a></li>
+                  <li><a href="/guides/actions/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/actions/parameters">Parameters</a></li>
+                  <li><a href="/guides/actions/request-and-response">Request & Response</a></li>
+                  <li><a href="/guides/actions/exposures">Exposures</a></li>
+                  <li><a href="/guides/actions/rack-integration">Rack Integration</a></li>
+                  <li><a href="/guides/actions/mime-types">MIME Types</a></li>
+                  <li><a href="/guides/actions/cookies">Cookies</a></li>
+                  <li><a href="/guides/actions/sessions">Sessions</a></li>
+                  <li><a href="/guides/actions/exception-handling">Exception Handling</a></li>
+                  <li><a href="/guides/actions/control-flow">Control Flow</a></li>
+                  <li><a href="/guides/actions/http-caching">HTTP Caching</a></li>
+                  <li><a href="/guides/actions/share-code">Share Code</a></li>
+                  <li><a href="/guides/actions/testing">Testing</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Views</span>
+                <ul class="nav">
+                  <li><a href="/guides/views/overview">Overview</a></li>
+                  <li><a href="/guides/views/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/views/templates">Templates</a></li>
+                  <li><a href="/guides/views/mime-types">MIME Types</a></li>
+                  <li><a href="/guides/views/layouts">Layouts</a></li>
+                  <li><a href="/guides/views/custom-error-pages">Custom Error Pages</a></li>
+                  <li><a href="/guides/views/share-code">Share Code</a></li>
+                  <li><a href="/guides/views/testing">Testing</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Models</span>
+                <ul class="nav">
+                  <li><a href="/guides/models/overview">Overview</a></li>
+                  <li><a href="/guides/models/entities">Entities</a></li>
+                  <li><a href="/guides/models/repositories">Repositories</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Migrations</span>
+                <ul class="nav">
+                  <li><a href="/guides/migrations/overview">Overview</a></li>
+                  <li><a href="/guides/migrations/create-table">Create Table</a></li>
+                  <li><a href="/guides/migrations/alter-table">Alter Table</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Helpers</span>
+                <ul class="nav">
+                  <li><a href="/guides/helpers/overview">Overview</a></li>
+                  <li><a href="/guides/helpers/html5">HTML5</a></li>
+                  <li><a href="/guides/helpers/forms">Forms</a></li>
+                  <li><a href="/guides/helpers/routing">Routing</a></li>
+                  <li><a href="/guides/helpers/links">Links</a></li>
+                  <li><a href="/guides/helpers/escape">Markup Escape</a></li>
+                  <li><a href="/guides/helpers/numbers">Numbers</a></li>
+                  <li><a href="/guides/helpers/custom-helpers">Custom Helpers</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Command Line</span>
+                <ul class="nav">
+                  <li><a href="/guides/command-line/applications">Applications</a></li>
+                  <li><a href="/guides/command-line/generators">Generators</a></li>
+                  <li><a href="/guides/command-line/database">Database</a></li>
+                  <li><a href="/guides/command-line/routes">Routes</a></li>
+                  <li><a href="/guides/command-line/version">Version</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-9 main">
+            <div class="doc-section">
+              <a href="https://github.com/lotus/lotus.github.io/edit/build//source/guides/actions/mime-types.md" id="edit-guides-article" title="Edit this article" target="_blank">edit</a>
+              <h1>MIME Types</h1>
+
+<p>Actions have advanced features for MIME type detection, automatic headers, whitelisting etc..</p>
+
+<h2>Request Introspection</h2>
+
+<p>In order to understand what the requested MIME type is, an action looks at the <code>Accept</code> request header and exposes a high level API: <code>#format</code> and <code>#accept?</code>.</p>
+
+<p>The first returns a symbol representation of the MIME type (eg. <code>:html</code>, <code>:json</code>, <code>:xml</code> etc..), while the second is a query method that accepts a MIME type string and checks if it&rsquo;s accepted by the current browser.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/controllers/dashboard/index.rb</span>
+<span class="k">module</span> <span class="nn">Web::Controllers::Dashboard</span>
+  <span class="k">class</span> <span class="nc">Index</span>
+    <span class="kp">include</span> <span class="no">Web</span><span class="o">::</span><span class="no">Action</span>
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+      <span class="nb">puts</span> <span class="nb">format</span>                     <span class="c1"># =&gt; :html</span>
+
+      <span class="nb">puts</span> <span class="n">accept?</span><span class="p">(</span><span class="s1">'text/html'</span><span class="p">)</span>       <span class="c1"># =&gt; true</span>
+      <span class="nb">puts</span> <span class="n">accept?</span><span class="p">(</span><span class="s1">'application/png'</span><span class="p">)</span> <span class="c1"># =&gt; false</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h2>Automatic Content-Type</h2>
+
+<p>An action returns the <code>Content-Type</code> response header automatically according to the requested MIME Type and charset.</p>
+
+<p>If the client asks for <code>Accept: text/html,application/xhtml+xml,application/xml;q=0.9</code>, the action will return <code>Content-Type: text/html; charset=utf-8</code>.</p>
+
+<h3>Default Format</h3>
+
+<p>If a client asks for a generic <code>Accept: */*</code>, the action will fall back to the <strong>application default format</strong>.
+It&rsquo;s a setting that allows to safely handle cases like our example, the default value is <code>:html</code>.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/application.rb</span>
+
+<span class="k">module</span> <span class="nn">Web</span>
+  <span class="k">class</span> <span class="nc">Application</span> <span class="o">&lt;</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Application</span>
+    <span class="n">configure</span> <span class="k">do</span>
+      <span class="c1"># ...</span>
+      <span class="n">default_format</span> <span class="ss">:json</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h3>Default Charset</h3>
+
+<p>Similarly, we can specify a different default charset to return.
+The standard value is <code>utf-8</code>, but we can change it in our settings.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/application.rb</span>
+
+<span class="k">module</span> <span class="nn">Web</span>
+  <span class="k">class</span> <span class="nc">Application</span> <span class="o">&lt;</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Application</span>
+    <span class="n">configure</span> <span class="k">do</span>
+      <span class="c1"># ...</span>
+      <span class="n">default_charset</span> <span class="s1">'koi8-r'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h3>Override</h3>
+
+<p>There is a way we can force the returned <code>Content-Type</code>: use <code>#format=</code>.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/controllers/dashboard/index.rb</span>
+<span class="k">module</span> <span class="nn">Web::Controllers::Dashboard</span>
+  <span class="k">class</span> <span class="nc">Index</span>
+    <span class="kp">include</span> <span class="no">Web</span><span class="o">::</span><span class="no">Action</span>
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+      <span class="nb">puts</span> <span class="nb">self</span><span class="p">.</span><span class="nf">format</span> <span class="c1"># =&gt; :html</span>
+
+      <span class="c1"># force a different value</span>
+      <span class="nb">self</span><span class="p">.</span><span class="nf">format</span>        <span class="o">=</span>  <span class="ss">:json</span>
+      <span class="nb">puts</span> <span class="nb">self</span><span class="p">.</span><span class="nf">format</span> <span class="c1"># =&gt; :json</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>The example above will return <code>Content-Type: application/json; charset=utf-8</code>.</p>
+
+<h2>Whitelisting</h2>
+
+<p>We can also restrict the range of accepted MIME Types.
+If the incoming request doesn&rsquo;t satisfy this constraint, the application will return a <code>Not Acceptable</code> status (<code>406</code>).</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/controllers/dashboard/index.rb</span>
+<span class="k">module</span> <span class="nn">Web::Controllers::Dashboard</span>
+  <span class="k">class</span> <span class="nc">Index</span>
+    <span class="kp">include</span> <span class="no">Web</span><span class="o">::</span><span class="no">Action</span>
+    <span class="n">accept</span> <span class="ss">:html</span><span class="p">,</span> <span class="ss">:json</span>
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+      <span class="c1"># ...</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h2>Register MIME Types</h2>
+
+<p>Lotus knows about more than 100 of the most common MIME types.
+However, we may want to add custom types in order to use them with <code>#format=</code> or <code>.accept</code>.</p>
+
+<p>In our application settings, we can use <code>controller.format</code>, which accepts a Hash where the key is the format symbol (<code>:custom</code>) and the value is a string expressed in the MIME type standard (<code>application/custom</code>).</p>
+<pre class="language-ruby ruby"><code><span class="c1"># apps/web/application.rb</span>
+
+<span class="k">module</span> <span class="nn">Web</span>
+  <span class="k">class</span> <span class="nc">Application</span> <span class="o">&lt;</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Application</span>
+    <span class="n">configure</span> <span class="k">do</span>
+      <span class="c1"># ...</span>
+      <span class="n">controller</span><span class="p">.</span><span class="nf">format</span> <span class="ss">custom: </span><span class="s1">'application/custom'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="email-signup">
+  <div class="container-fluid wrapper">
+    <form action="http://lotusrb.us3.list-manage.com/subscribe/post" method="POST" class="">
+      <input name="u" value="dcbeefa4ba1ea9ae043857005" type="hidden">
+      <input name="id" value="fb3873a90f" type="hidden">
+      <input name="orig-lang" value="1" type="hidden">
+      <input type="email" placeholder="Enter your email to get updates" spellcheck="false" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" value="" class="pull-left">
+      <button type="submit" class="btn btn-primary pull-right">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="primary">
+  <div class="container-fluid wrapper">
+    <div class="row">
+      <a class="logo col-md-3" href="/">logo</a>
+        <div class="col-md-4">
+          <span class="date">June 28, 2015</span>
+          <h4>Weekly Changelog</h4>
+          <p>Changelog from Jun 01 2015 to Jun 28 2015
+</p>
+          <a href="/blog/2015/06/28/weekly-changelog.html">Read more...</a>
+        </div>
+        <div class="col-md-4">
+          <span class="date">June 23, 2015</span>
+          <h4>Announcing Lotus v0.4.0</h4>
+          <p>Features: additional architecture, database migrations, HTML5 form helpers, CSRF Protection, Force SSL. New Core Team member, Rails Girls Summer of Code and Guides!
+</p>
+          <a href="/blog/2015/06/23/announcing-lotus-040.html">Read more...</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="sub-footer wrapper">
+    <p class="copyright pull-left">&copy; 2014-<span id="copyright-year">{{year}}</span> <a href="http://lucaguidi.com/">Luca Guidi</a> – Lotus is released under the MIT License.
+    <br>
+    <br> This website and its contents are released under <a href="http://creativecommons.org/licenses/by-nc/4.0/" href="_blank">CC Attribution-NonCommercial 4.0</a>.
+    <br> Maintained with <3 by the <a href="https://github.com/orgs/lotus/people" target="_blank">core team</a> with help from <a href="https://github.com/lotus/lotus/graphs/contributors" target="_blank">contributors</a>. Site Design by <a href="http://www.alantippins.com/">Alan Tippins</a>.</p>
+    <ul class="social">
+      <li><a href="https://twitter.com/lotus_rb" target="_blank" class="icon-twitter"></a></li>
+      <li><a href="https://github.com/lotus" target="_blank" class="icon-github"></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+
+<script src="/javascripts/application.js" type="text/javascript"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-47369640-1', 'lotusrb.org');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

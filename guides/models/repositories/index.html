@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lotus - Guides - Repositories</title>
+    <meta name="description" content="Lotus, a complete web framework for Ruby" />
+    <meta name="keywords" content="lotus,web,framework,ruby,open source,oss,os,software,free,free software,architecture,fast,lightweight,testing,tdd,bdd,test driven development,behaviour driven development,full stack,mvc,model view object,pattern,patterns,design patterns,oop,object oriented programming,testability,http,https,routing,router,http router,restful,resource,resources,convention,controller,models,repository,query,sql,interactors,two-step view,view,template,presenters,render,rendering,helpers,erb,haml,tilt,json,xml,yaml,yml,framwork,framewrok,riby,free sowftare"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://feeds.feedburner.com/lotusrb" rel="alternate" title="Lotus" type="application/atom+xml" />
+
+    <link href="/stylesheets/application.css" rel="stylesheet" type="text/css" />
+
+    <script src="//use.typekit.net/xhp5wmc.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body class="subpage docs">
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-fixed-top container-fluid">
+  <div class="wrapper container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/community">Community</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://rubygems.org/gems/lotusrb" id="nav-link-install" target="_blank" class="btn btn-primary version">Install v0.4.0</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+    <section class="docs wrapper animated fadeIn">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 hidden-sm hidden-xs sidebar">
+            <ul class="nav nav-sidebar">
+              <li>
+                <span class="heading">Getting Started</span>
+                <ul class="nav">
+                  <li><a href="/guides/getting-started">Getting Started</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Architectures</span>
+                <ul class="nav">
+                  <li><a href="/guides/architectures/overview">Overview</a></li>
+                  <li><a href="/guides/architectures/container">Container</a></li>
+                  <li><a href="/guides/architectures/application">Application</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Routing</span>
+                <ul class="nav">
+                  <li><a href="/guides/routing/overview">Overview</a></li>
+                  <li><a href="/guides/routing/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/routing/restful-resources">RESTful Resource(s)</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Actions</span>
+                <ul class="nav">
+                  <li><a href="/guides/actions/overview">Overview</a></li>
+                  <li><a href="/guides/actions/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/actions/parameters">Parameters</a></li>
+                  <li><a href="/guides/actions/request-and-response">Request & Response</a></li>
+                  <li><a href="/guides/actions/exposures">Exposures</a></li>
+                  <li><a href="/guides/actions/rack-integration">Rack Integration</a></li>
+                  <li><a href="/guides/actions/mime-types">MIME Types</a></li>
+                  <li><a href="/guides/actions/cookies">Cookies</a></li>
+                  <li><a href="/guides/actions/sessions">Sessions</a></li>
+                  <li><a href="/guides/actions/exception-handling">Exception Handling</a></li>
+                  <li><a href="/guides/actions/control-flow">Control Flow</a></li>
+                  <li><a href="/guides/actions/http-caching">HTTP Caching</a></li>
+                  <li><a href="/guides/actions/share-code">Share Code</a></li>
+                  <li><a href="/guides/actions/testing">Testing</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Views</span>
+                <ul class="nav">
+                  <li><a href="/guides/views/overview">Overview</a></li>
+                  <li><a href="/guides/views/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/views/templates">Templates</a></li>
+                  <li><a href="/guides/views/mime-types">MIME Types</a></li>
+                  <li><a href="/guides/views/layouts">Layouts</a></li>
+                  <li><a href="/guides/views/custom-error-pages">Custom Error Pages</a></li>
+                  <li><a href="/guides/views/share-code">Share Code</a></li>
+                  <li><a href="/guides/views/testing">Testing</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Models</span>
+                <ul class="nav">
+                  <li><a href="/guides/models/overview">Overview</a></li>
+                  <li><a href="/guides/models/entities">Entities</a></li>
+                  <li><a href="/guides/models/repositories">Repositories</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Migrations</span>
+                <ul class="nav">
+                  <li><a href="/guides/migrations/overview">Overview</a></li>
+                  <li><a href="/guides/migrations/create-table">Create Table</a></li>
+                  <li><a href="/guides/migrations/alter-table">Alter Table</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Helpers</span>
+                <ul class="nav">
+                  <li><a href="/guides/helpers/overview">Overview</a></li>
+                  <li><a href="/guides/helpers/html5">HTML5</a></li>
+                  <li><a href="/guides/helpers/forms">Forms</a></li>
+                  <li><a href="/guides/helpers/routing">Routing</a></li>
+                  <li><a href="/guides/helpers/links">Links</a></li>
+                  <li><a href="/guides/helpers/escape">Markup Escape</a></li>
+                  <li><a href="/guides/helpers/numbers">Numbers</a></li>
+                  <li><a href="/guides/helpers/custom-helpers">Custom Helpers</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Command Line</span>
+                <ul class="nav">
+                  <li><a href="/guides/command-line/applications">Applications</a></li>
+                  <li><a href="/guides/command-line/generators">Generators</a></li>
+                  <li><a href="/guides/command-line/database">Database</a></li>
+                  <li><a href="/guides/command-line/routes">Routes</a></li>
+                  <li><a href="/guides/command-line/version">Version</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-9 main">
+            <div class="doc-section">
+              <a href="https://github.com/lotus/lotus.github.io/edit/build//source/guides/models/repositories.md" id="edit-guides-article" title="Edit this article" target="_blank">edit</a>
+              <h1>Repositories</h1>
+
+<p>An object that mediates between entities and the persistence layer.
+It offers a standardized API to query and execute commands on a database.</p>
+
+<p>A repository is <strong>storage independent</strong>, all the queries and commands are
+delegated to the current adapter.</p>
+
+<p>This architecture has several advantages:</p>
+
+<ul>
+<li><p>Applications depend on a standard API, instead of low level details
+(Dependency Inversion principle)</p></li>
+<li><p>Applications depend on a stable API, that doesn&rsquo;t change if the
+storage changes</p></li>
+<li><p>Developers can postpone storage decisions</p></li>
+<li><p>Confines persistence logic at a low level</p></li>
+<li><p>Multiple data sources can easily coexist in an application</p></li>
+</ul>
+
+<h2>Interface</h2>
+
+<p>When a class includes <code>Lotus::Repository</code>, it will receive the following interface:</p>
+
+<ul>
+<li><code>.persist(entity)</code> – Create or update an entity</li>
+<li><code>.create(entity)</code>  – Create a record for the given entity</li>
+<li><code>.update(entity)</code>  – Update the record corresponding to the given entity</li>
+<li><code>.delete(entity)</code>  – Delete the record corresponding to the given entity</li>
+<li><code>.all</code>   - Fetch all the entities from the collection</li>
+<li><code>.find</code>  - Fetch an entity from the collection by its ID</li>
+<li><code>.first</code> - Fetch the first entity from the collection</li>
+<li><code>.last</code>  - Fetch the last entity from the collection</li>
+<li><code>.clear</code> - Delete all the records from the collection</li>
+<li><code>.query</code> - Fabricates a query object</li>
+</ul>
+
+<p><strong>A collection is a homogenous set of records.</strong>
+It corresponds to a table for a SQL database or to a MongoDB collection.</p>
+
+<h2>Private Queries</h2>
+
+<p><strong>All the queries are private</strong>.
+This decision forces developers to define intention revealing API, instead of leaking storage API details outside of a repository.</p>
+
+<p>Look at the following code:</p>
+<pre class="language-ruby ruby"><code><span class="no">BookRepository</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="ss">author_id: </span><span class="mi">23</span><span class="p">).</span><span class="nf">order</span><span class="p">(</span><span class="ss">:published_at</span><span class="p">).</span><span class="nf">limit</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</code></pre>
+
+<p>This is <strong>bad</strong> for a variety of reasons:</p>
+
+<ul>
+<li><p>The caller has an intimate knowledge of the internal mechanisms of the Repository.</p></li>
+<li><p>The caller works on several levels of abstraction.</p></li>
+<li><p>It doesn&rsquo;t express a clear intent, it&rsquo;s just a chain of methods.</p></li>
+<li><p>The caller can&rsquo;t be easily tested in isolation.</p></li>
+<li><p>If we change the storage, we are forced to change the code of the caller(s).</p></li>
+</ul>
+
+<p>There is a better way:</p>
+<pre class="language-ruby ruby"><code><span class="c1"># lib/bookshelf/repositories/book_repository.rb</span>
+
+<span class="k">class</span> <span class="nc">BookRepository</span>
+  <span class="kp">include</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Repository</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">most_recent_by_author</span><span class="p">(</span><span class="n">author</span><span class="p">,</span> <span class="ss">limit: </span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">query</span> <span class="k">do</span>
+      <span class="n">where</span><span class="p">(</span><span class="ss">author_id: </span><span class="n">author</span><span class="p">.</span><span class="nf">id</span><span class="p">).</span>
+        <span class="nf">order</span><span class="p">(</span><span class="ss">:published_at</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">.</span><span class="nf">limit</span><span class="p">(</span><span class="n">limit</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>This is a <strong>huge improvement</strong>, because:</p>
+
+<ul>
+<li><p>The caller doesn&rsquo;t know how the repository fetches the entities.</p></li>
+<li><p>The caller works on a single level of abstraction. It doesn&rsquo;t even know about records, only works with entities.</p></li>
+<li><p>It expresses a clear intent.</p></li>
+<li><p>The caller can be easily tested in isolation. It&rsquo;s just a matter of stubbing this method.</p></li>
+<li><p>If we change the storage, the callers aren&rsquo;t affected.</p></li>
+</ul>
+
+<h2>Extended Example</h2>
+
+<p>Here is an extended example of a repository that uses the SQL adapter.</p>
+<pre class="language-ruby ruby"><code><span class="c1"># lib/bookshelf/repositories/book_repository.rb</span>
+<span class="k">class</span> <span class="nc">BookRepository</span>
+  <span class="kp">include</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Repository</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">most_recent_by_author</span><span class="p">(</span><span class="n">author</span><span class="p">,</span> <span class="ss">limit: </span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">query</span> <span class="k">do</span>
+      <span class="n">where</span><span class="p">(</span><span class="ss">author_id: </span><span class="n">author</span><span class="p">.</span><span class="nf">id</span><span class="p">).</span>
+        <span class="nf">desc</span><span class="p">(</span><span class="ss">:id</span><span class="p">).</span>
+        <span class="nf">limit</span><span class="p">(</span><span class="n">limit</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">most_recent_published_by_author</span><span class="p">(</span><span class="n">author</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">8</span><span class="p">)</span>
+    <span class="n">most_recent_by_author</span><span class="p">(</span><span class="n">author</span><span class="p">,</span> <span class="n">limit</span><span class="p">).</span><span class="nf">published</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">published</span>
+    <span class="n">query</span> <span class="k">do</span>
+      <span class="n">where</span><span class="p">(</span><span class="ss">published: </span><span class="kp">true</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">drafts</span>
+    <span class="n">exclude</span> <span class="n">published</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">rank</span>
+    <span class="n">published</span><span class="p">.</span><span class="nf">desc</span><span class="p">(</span><span class="ss">:comments_count</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">best_article_ever</span>
+    <span class="n">rank</span><span class="p">.</span><span class="nf">limit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">comments_average</span>
+    <span class="n">query</span><span class="p">.</span><span class="nf">average</span><span class="p">(</span><span class="ss">:comments_count</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h2>Reuse Code</h2>
+
+<p>You can also extract the common logic from your repository into a module to reuse it in other repositories.
+Here is a pagination example:</p>
+<pre class="language-ruby ruby"><code><span class="c1"># lib/bookshelf/repositories/pagination.rb</span>
+<span class="k">module</span> <span class="nn">Bookshelf</span>
+  <span class="k">module</span> <span class="nn">Repositories</span>
+    <span class="k">module</span> <span class="nn">Pagination</span>
+      <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">paginate</span><span class="p">(</span><span class="ss">limit: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">offset: </span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">query</span> <span class="k">do</span>
+          <span class="n">limit</span><span class="p">(</span><span class="n">limit</span><span class="p">).</span><span class="nf">offset</span><span class="p">(</span><span class="n">offset</span><span class="p">)</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+<pre class="language-ruby ruby"><code><span class="c1"># lib/bookshelf/repositories/book_repository.rb</span>
+<span class="k">class</span> <span class="nc">BookRepository</span>
+  <span class="kp">include</span> <span class="no">Lotus</span><span class="o">::</span><span class="no">Repository</span>
+  <span class="kp">include</span> <span class="no">Bookshelf</span><span class="o">::</span><span class="no">Repositories</span><span class="o">::</span><span class="no">Pagination</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">published</span>
+    <span class="n">query</span> <span class="k">do</span>
+      <span class="n">where</span><span class="p">(</span><span class="ss">published: </span><span class="kp">true</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">.</span><span class="nf">paginate</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="email-signup">
+  <div class="container-fluid wrapper">
+    <form action="http://lotusrb.us3.list-manage.com/subscribe/post" method="POST" class="">
+      <input name="u" value="dcbeefa4ba1ea9ae043857005" type="hidden">
+      <input name="id" value="fb3873a90f" type="hidden">
+      <input name="orig-lang" value="1" type="hidden">
+      <input type="email" placeholder="Enter your email to get updates" spellcheck="false" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" value="" class="pull-left">
+      <button type="submit" class="btn btn-primary pull-right">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="primary">
+  <div class="container-fluid wrapper">
+    <div class="row">
+      <a class="logo col-md-3" href="/">logo</a>
+        <div class="col-md-4">
+          <span class="date">June 28, 2015</span>
+          <h4>Weekly Changelog</h4>
+          <p>Changelog from Jun 01 2015 to Jun 28 2015
+</p>
+          <a href="/blog/2015/06/28/weekly-changelog.html">Read more...</a>
+        </div>
+        <div class="col-md-4">
+          <span class="date">June 23, 2015</span>
+          <h4>Announcing Lotus v0.4.0</h4>
+          <p>Features: additional architecture, database migrations, HTML5 form helpers, CSRF Protection, Force SSL. New Core Team member, Rails Girls Summer of Code and Guides!
+</p>
+          <a href="/blog/2015/06/23/announcing-lotus-040.html">Read more...</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="sub-footer wrapper">
+    <p class="copyright pull-left">&copy; 2014-<span id="copyright-year">{{year}}</span> <a href="http://lucaguidi.com/">Luca Guidi</a> – Lotus is released under the MIT License.
+    <br>
+    <br> This website and its contents are released under <a href="http://creativecommons.org/licenses/by-nc/4.0/" href="_blank">CC Attribution-NonCommercial 4.0</a>.
+    <br> Maintained with <3 by the <a href="https://github.com/orgs/lotus/people" target="_blank">core team</a> with help from <a href="https://github.com/lotus/lotus/graphs/contributors" target="_blank">contributors</a>. Site Design by <a href="http://www.alantippins.com/">Alan Tippins</a>.</p>
+    <ul class="social">
+      <li><a href="https://twitter.com/lotus_rb" target="_blank" class="icon-twitter"></a></li>
+      <li><a href="https://github.com/lotus" target="_blank" class="icon-github"></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+
+<script src="/javascripts/application.js" type="text/javascript"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-47369640-1', 'lotusrb.org');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

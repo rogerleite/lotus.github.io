@@ -1,0 +1,363 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lotus - Guides - Migrations Create Tables</title>
+    <meta name="description" content="Lotus, a complete web framework for Ruby" />
+    <meta name="keywords" content="lotus,web,framework,ruby,open source,oss,os,software,free,free software,architecture,fast,lightweight,testing,tdd,bdd,test driven development,behaviour driven development,full stack,mvc,model view object,pattern,patterns,design patterns,oop,object oriented programming,testability,http,https,routing,router,http router,restful,resource,resources,convention,controller,models,repository,query,sql,interactors,two-step view,view,template,presenters,render,rendering,helpers,erb,haml,tilt,json,xml,yaml,yml,framwork,framewrok,riby,free sowftare"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://feeds.feedburner.com/lotusrb" rel="alternate" title="Lotus" type="application/atom+xml" />
+
+    <link href="/stylesheets/application.css" rel="stylesheet" type="text/css" />
+
+    <script src="//use.typekit.net/xhp5wmc.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body class="subpage docs">
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-fixed-top container-fluid">
+  <div class="wrapper container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/community">Community</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://rubygems.org/gems/lotusrb" id="nav-link-install" target="_blank" class="btn btn-primary version">Install v0.4.0</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+    <section class="docs wrapper animated fadeIn">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 hidden-sm hidden-xs sidebar">
+            <ul class="nav nav-sidebar">
+              <li>
+                <span class="heading">Getting Started</span>
+                <ul class="nav">
+                  <li><a href="/guides/getting-started">Getting Started</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Architectures</span>
+                <ul class="nav">
+                  <li><a href="/guides/architectures/overview">Overview</a></li>
+                  <li><a href="/guides/architectures/container">Container</a></li>
+                  <li><a href="/guides/architectures/application">Application</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Routing</span>
+                <ul class="nav">
+                  <li><a href="/guides/routing/overview">Overview</a></li>
+                  <li><a href="/guides/routing/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/routing/restful-resources">RESTful Resource(s)</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Actions</span>
+                <ul class="nav">
+                  <li><a href="/guides/actions/overview">Overview</a></li>
+                  <li><a href="/guides/actions/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/actions/parameters">Parameters</a></li>
+                  <li><a href="/guides/actions/request-and-response">Request & Response</a></li>
+                  <li><a href="/guides/actions/exposures">Exposures</a></li>
+                  <li><a href="/guides/actions/rack-integration">Rack Integration</a></li>
+                  <li><a href="/guides/actions/mime-types">MIME Types</a></li>
+                  <li><a href="/guides/actions/cookies">Cookies</a></li>
+                  <li><a href="/guides/actions/sessions">Sessions</a></li>
+                  <li><a href="/guides/actions/exception-handling">Exception Handling</a></li>
+                  <li><a href="/guides/actions/control-flow">Control Flow</a></li>
+                  <li><a href="/guides/actions/http-caching">HTTP Caching</a></li>
+                  <li><a href="/guides/actions/share-code">Share Code</a></li>
+                  <li><a href="/guides/actions/testing">Testing</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Views</span>
+                <ul class="nav">
+                  <li><a href="/guides/views/overview">Overview</a></li>
+                  <li><a href="/guides/views/basic-usage">Basic Usage</a></li>
+                  <li><a href="/guides/views/templates">Templates</a></li>
+                  <li><a href="/guides/views/mime-types">MIME Types</a></li>
+                  <li><a href="/guides/views/layouts">Layouts</a></li>
+                  <li><a href="/guides/views/custom-error-pages">Custom Error Pages</a></li>
+                  <li><a href="/guides/views/share-code">Share Code</a></li>
+                  <li><a href="/guides/views/testing">Testing</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Models</span>
+                <ul class="nav">
+                  <li><a href="/guides/models/overview">Overview</a></li>
+                  <li><a href="/guides/models/entities">Entities</a></li>
+                  <li><a href="/guides/models/repositories">Repositories</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Migrations</span>
+                <ul class="nav">
+                  <li><a href="/guides/migrations/overview">Overview</a></li>
+                  <li><a href="/guides/migrations/create-table">Create Table</a></li>
+                  <li><a href="/guides/migrations/alter-table">Alter Table</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Helpers</span>
+                <ul class="nav">
+                  <li><a href="/guides/helpers/overview">Overview</a></li>
+                  <li><a href="/guides/helpers/html5">HTML5</a></li>
+                  <li><a href="/guides/helpers/forms">Forms</a></li>
+                  <li><a href="/guides/helpers/routing">Routing</a></li>
+                  <li><a href="/guides/helpers/links">Links</a></li>
+                  <li><a href="/guides/helpers/escape">Markup Escape</a></li>
+                  <li><a href="/guides/helpers/numbers">Numbers</a></li>
+                  <li><a href="/guides/helpers/custom-helpers">Custom Helpers</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="heading">Command Line</span>
+                <ul class="nav">
+                  <li><a href="/guides/command-line/applications">Applications</a></li>
+                  <li><a href="/guides/command-line/generators">Generators</a></li>
+                  <li><a href="/guides/command-line/database">Database</a></li>
+                  <li><a href="/guides/command-line/routes">Routes</a></li>
+                  <li><a href="/guides/command-line/version">Version</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-9 main">
+            <div class="doc-section">
+              <a href="https://github.com/lotus/lotus.github.io/edit/build//source/guides/migrations/create-table.md" id="edit-guides-article" title="Edit this article" target="_blank">edit</a>
+              <h1>Migrations</h1>
+
+<h2>Create Tables</h2>
+
+<p>A table is defined via <code>#create_table</code>. This method accepts two arguments: the <strong>name</strong> and a <strong>block</strong> that expresses the design.</p>
+
+<p>Safe operation can be performed via <code>#create_table?</code>. It only creates the table if it doesn&rsquo;t exist.
+Force operation can be performed via <code>#create_table!</code>. It drops the existing table and creates a new one from scratch.
+<strong>These operations shouldn&rsquo;t be used in migrations</strong>.</p>
+
+<h4>Column Definition</h4>
+
+<p>To define a column we use <code>#column</code>, followed by the <strong>name</strong>, the <strong>type</strong> and <strong>options</strong>.
+The name must be a unique identifier within the table.</p>
+
+<p>The type can be a Ruby type (e.g. <code>String</code>), a symbol that represent a Ruby type (e.g. <code>:string</code>)  , or a string that represents the raw database type (e.g. <code>&quot;varchar(255)&quot;</code>).</p>
+
+<h5>Type Definition</h5>
+
+<p>The following Ruby types are supported:</p>
+
+<ul>
+<li><code>String</code> (<code>varchar(255)</code>)</li>
+<li><code>Numeric</code> (<code>numeric</code>)</li>
+<li><code>Fixnum</code> (<code>integer</code>)</li>
+<li><code>Integer</code> (<code>integer</code>)</li>
+<li><code>Bignum</code> (<code>bigint</code>)</li>
+<li><code>Float</code> (<code>double precision</code>)</li>
+<li><code>BigDecimal</code> (<code>numeric</code>)</li>
+<li><code>Date</code> (<code>date</code>)</li>
+<li><code>DateTime</code> (<code>timestamp</code>)</li>
+<li><code>Time</code> (<code>timestamp</code>)</li>
+<li><code>TrueClass</code> (<code>boolean</code>)</li>
+<li><code>FalseClass</code> (<code>boolean</code>)</li>
+<li><code>File</code> (<code>blob</code>)</li>
+</ul>
+
+<p>Their translation from Ruby types to database types may vary from database to database.</p>
+
+<h5>Options</h5>
+
+<p>It supports the following options:</p>
+
+<ul>
+<li><code>:default</code> (default value)</li>
+<li><code>:index</code> (create an index for the column)</li>
+<li><code>:null</code> (allow NULL values or not)</li>
+<li><code>:primary_key</code> (make the column primary key for the table)</li>
+<li><code>:unique</code> (add an uniqueness constraint for the column)</li>
+</ul>
+
+<h4>Primary Key</h4>
+
+<p>We can define <strong>primary keys</strong> with the following syntaxes:</p>
+<pre class="language-ruby ruby"><code><span class="n">column</span> <span class="ss">:id</span><span class="p">,</span> <span class="no">Integer</span><span class="p">,</span> <span class="ss">null: </span><span class="kp">false</span><span class="p">,</span> <span class="ss">primary_key: </span><span class="kp">true</span>
+<span class="c1"># or just use this shortcut</span>
+<span class="n">primary_key</span> <span class="ss">:id</span>
+</code></pre>
+
+<h4>Foreign Keys</h4>
+
+<p><strong>Foreign keys</strong> are defined via <code>#foreign_key</code>, where we specify the <strong>name</strong> of the column, the <strong>referenced table</strong>, and a set of <strong>options</strong>.
+The following example creates an <code>author_id</code> column (integer) for <code>books</code> and adds a foreign key.</p>
+<pre class="language-ruby ruby"><code><span class="n">create_table</span> <span class="ss">:books</span> <span class="k">do</span>
+  <span class="c1"># ...</span>
+  <span class="n">foreign_key</span> <span class="ss">:author_id</span><span class="p">,</span> <span class="ss">:authors</span><span class="p">,</span> <span class="ss">on_delete: :cascade</span><span class="p">,</span> <span class="ss">null: </span><span class="kp">false</span>
+<span class="k">end</span>
+</code></pre>
+
+<h5>Options</h5>
+
+<p>It accepts the following options:</p>
+
+<ul>
+<li><code>:deferrable</code> (make the constraint check deferrable at the end of a transaction)</li>
+<li><code>:key</code> (the column in the associated table that this column references. Unnecessary if this column references the primary key of the associated table)</li>
+<li><code>:null</code> (allow NULL values or not)</li>
+<li><code>:type</code> (the column type)</li>
+<li><code>:on_delete</code> (action to take if the referenced record is deleted: <code>:restrict</code>, <code>:cascade</code>, <code>:set_null</code>, or <code>:set_default</code>)</li>
+<li><code>:on_update</code> (action to take if the referenced record is updated: <code>:restrict</code>, <code>:cascade</code>, <code>:set_null</code>, or <code>:set_default</code>)</li>
+</ul>
+
+<h4>Indexes</h4>
+
+<p>Indexes are defined via <code>#index</code>. It accepts the <strong>name(s)</strong> of the column(s), and a set of <strong>options</strong>.</p>
+<pre class="language-ruby ruby"><code><span class="n">create_table</span> <span class="ss">:stores</span> <span class="k">do</span>
+  <span class="c1"># ...</span>
+  <span class="n">column</span> <span class="ss">:code</span><span class="p">,</span> <span class="no">Integer</span><span class="p">,</span> <span class="ss">null: </span><span class="kp">false</span>
+  <span class="n">column</span> <span class="ss">:lat</span><span class="p">,</span> <span class="no">Float</span>
+  <span class="n">column</span> <span class="ss">:lng</span><span class="p">,</span> <span class="no">Float</span>
+
+  <span class="n">index</span> <span class="ss">:code</span><span class="p">,</span> <span class="ss">unique: </span><span class="kp">true</span>
+  <span class="n">index</span> <span class="p">[</span><span class="ss">:lat</span><span class="p">,</span> <span class="ss">:lng</span><span class="p">],</span> <span class="ss">name: :stores_coords_index</span>
+<span class="k">end</span>
+</code></pre>
+
+<h5>Options</h5>
+
+<p>It accepts the following options:</p>
+
+<ul>
+<li><code>:unique</code> (uniqueness constraint)</li>
+<li><code>:name</code> (custom name)</li>
+<li><code>:type</code> (the type of index, supported by some databases)</li>
+<li><code>:where</code> (partial index, supported by some databases)</li>
+</ul>
+
+<h4>Constraints</h4>
+
+<p>We can define constraints on columns via <code>#constraint</code>. It accepts a <strong>name</strong> and a <strong>block</strong>.</p>
+<pre class="language-ruby ruby"><code><span class="n">create_table</span> <span class="ss">:users</span> <span class="k">do</span>
+  <span class="c1"># ...</span>
+  <span class="n">column</span> <span class="ss">:age</span><span class="p">,</span> <span class="no">Integer</span>
+  <span class="n">constraint</span><span class="p">(</span><span class="ss">:adult_constraint</span><span class="p">)</span> <span class="p">{</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">18</span> <span class="p">}</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>Please note that the block is evaluated in the context of the database engine, <strong>complex Ruby code doesn&rsquo;t work</strong>.
+Database functions are mapped to Ruby functions, but this reduces the portability of the migration.</p>
+<pre class="language-ruby ruby"><code><span class="n">create_table</span> <span class="ss">:users</span> <span class="k">do</span>
+  <span class="c1"># ...</span>
+  <span class="n">column</span> <span class="ss">:password</span><span class="p">,</span> <span class="no">String</span>
+  <span class="n">constraint</span><span class="p">(</span><span class="ss">:password_length_constraint</span><span class="p">)</span> <span class="p">{</span> <span class="n">char_length</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">8</span> <span class="p">}</span>
+<span class="k">end</span>
+</code></pre>
+
+<h4>Checks</h4>
+
+<p>Checks are similar to constraints, but they accept an <strong>anoymous block</strong> or a <strong>SQL raw string</strong>.</p>
+<pre class="language-ruby ruby"><code><span class="n">create_table</span> <span class="ss">:users</span> <span class="k">do</span>
+  <span class="c1"># ...</span>
+  <span class="n">column</span> <span class="ss">:age</span><span class="p">,</span> <span class="no">Integer</span>
+  <span class="n">column</span> <span class="ss">:role</span><span class="p">,</span> <span class="no">String</span>
+
+  <span class="n">check</span> <span class="p">{</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">18</span> <span class="p">}</span>
+  <span class="n">check</span> <span class="sx">%(role IN("contributor", "manager", "owner"))</span>
+<span class="k">end</span>
+</code></pre>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="email-signup">
+  <div class="container-fluid wrapper">
+    <form action="http://lotusrb.us3.list-manage.com/subscribe/post" method="POST" class="">
+      <input name="u" value="dcbeefa4ba1ea9ae043857005" type="hidden">
+      <input name="id" value="fb3873a90f" type="hidden">
+      <input name="orig-lang" value="1" type="hidden">
+      <input type="email" placeholder="Enter your email to get updates" spellcheck="false" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" value="" class="pull-left">
+      <button type="submit" class="btn btn-primary pull-right">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="primary">
+  <div class="container-fluid wrapper">
+    <div class="row">
+      <a class="logo col-md-3" href="/">logo</a>
+        <div class="col-md-4">
+          <span class="date">June 28, 2015</span>
+          <h4>Weekly Changelog</h4>
+          <p>Changelog from Jun 01 2015 to Jun 28 2015
+</p>
+          <a href="/blog/2015/06/28/weekly-changelog.html">Read more...</a>
+        </div>
+        <div class="col-md-4">
+          <span class="date">June 23, 2015</span>
+          <h4>Announcing Lotus v0.4.0</h4>
+          <p>Features: additional architecture, database migrations, HTML5 form helpers, CSRF Protection, Force SSL. New Core Team member, Rails Girls Summer of Code and Guides!
+</p>
+          <a href="/blog/2015/06/23/announcing-lotus-040.html">Read more...</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="sub-footer wrapper">
+    <p class="copyright pull-left">&copy; 2014-<span id="copyright-year">{{year}}</span> <a href="http://lucaguidi.com/">Luca Guidi</a> – Lotus is released under the MIT License.
+    <br>
+    <br> This website and its contents are released under <a href="http://creativecommons.org/licenses/by-nc/4.0/" href="_blank">CC Attribution-NonCommercial 4.0</a>.
+    <br> Maintained with <3 by the <a href="https://github.com/orgs/lotus/people" target="_blank">core team</a> with help from <a href="https://github.com/lotus/lotus/graphs/contributors" target="_blank">contributors</a>. Site Design by <a href="http://www.alantippins.com/">Alan Tippins</a>.</p>
+    <ul class="social">
+      <li><a href="https://twitter.com/lotus_rb" target="_blank" class="icon-twitter"></a></li>
+      <li><a href="https://github.com/lotus" target="_blank" class="icon-github"></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+
+<script src="/javascripts/application.js" type="text/javascript"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-47369640-1', 'lotusrb.org');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
