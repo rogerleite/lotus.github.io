@@ -166,11 +166,18 @@
 
 <p>The default architecture for a newly generated project is <em>Container</em>.</p>
 
-<p>We can use <code>--architecture</code> (aliased as <code>--arch</code>) to specify another value.</p>
+<p>We can use <code>--architecture</code> (aliased as <code>--arch</code>) to specify different architecture.</p>
+
+<p>It supporsts:</p>
+
+<ul>
+<li><code>container</code> (default)</li>
+<li><code>app</code></li>
+</ul>
+
+<p>The following command will generate an <code>admin</code> project that uses the <em>Application</em> architecture.</p>
 <pre class="language-ruby shell"><code><span class="gp">% </span>lotus new admin --arch<span class="o">=</span>app
 </code></pre>
-
-<p>This will generate an <code>admin</code> project that uses the <em>Application</em> architecture.</p>
 
 <h3>Database</h3>
 
